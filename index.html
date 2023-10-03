@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Form registrasi</title>
+</head>
+<body>
+    <form id="form-registrasi" onsubmit="formValidation()">
+        <h1>Form registrasi Mata Kuliah</h1>
+        <div class="box-question">
+            <label for="nama-mahasiswa">Nama</label>
+            <input type="text" id="nama" name="nama">
+            <div id="recommendation"></div>
+        </div>
+        <div class="box-question">
+            <label for="NRP">NRP</label>
+            <input type="text" id="NRP" name="NRP">
+        </div>
+        <div class="box-question">
+            <label for="mata-kuliah">Mata Kuliah</label>
+            <select id="mata-kuliah" name="mata-kuliah"></select>
+        </div>
+        <div class="box-question">
+            <label for="dosen">Dosen Wali</label>
+            <select id="dosen" name="dosen"></select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
